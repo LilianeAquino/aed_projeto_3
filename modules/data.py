@@ -30,13 +30,13 @@ def convertDiagnosis(data, col):
         elif (np.floor(data[col][i]) >= 800 and np.floor(data[col][i]) <= 999): #800–999
             data[col][i] = 5
                  
-        elif (np.floor(data[col][i]) == 780) or (np.floor(data[col][i]) >= 140 and np.floor(data[col][i]) <= 239): #140–239 
+        elif (np.floor(data[col][i]) == 780) or (np.floor(data[col][i]) >= 140 and np.floor(data[col][i]) <= 239): #140–239 780
             data[col][i] = 8
                              
-        elif (np.floor(data[col][i]) >= 780 and np.floor(data[col][i]) <= 784): #780, 781, 782, 784
+        elif (np.floor(data[col][i]) >= 781 and np.floor(data[col][i]) <= 784): #781, 782, 784
             data[col][i] = 8
                              
-        elif (np.floor(data[col][i]) >= 790 and np.floor(data[col][i]) <= 799): #790–799
+        elif (np.floor(data[col][i]) >= 789 and np.floor(data[col][i]) <= 799): #789–799
             data[col][i] = 8
                                          
         elif (np.floor(data[col][i]) >= 240 and np.floor(data[col][i]) <= 279) and (np.floor(data[col][i]) != 250):#240–279 !250
